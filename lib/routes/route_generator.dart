@@ -11,7 +11,7 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => const LoginView());
       case Routes.home:
         // Add more cases for home routes
-        return MaterialPageRoute(builder: (_) =>  HomePage());
+        return MaterialPageRoute(builder: (_) =>  const HomePage());
 
       // Add more cases for additional routes
       default:

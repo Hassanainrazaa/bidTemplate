@@ -38,7 +38,7 @@ class _MyAppState extends State<MyApp> {
       ],
       child: const MaterialApp(
         title: 'BID TEMPLATE',
-        initialRoute: Routes.home,
+        initialRoute: Routes.login,
         onGenerateRoute: RouteGenerator.generateRoute,
         debugShowCheckedModeBanner: false,
       ),

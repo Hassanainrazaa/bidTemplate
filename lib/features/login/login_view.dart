@@ -416,7 +416,7 @@ class _LoginViewState extends State<LoginView> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "Email",
+                                "Username",
                                 style: GoogleFonts.mulish(
                                   fontSize: MySize.size16,
                                   color: Colors.grey[800],
@@ -425,14 +425,14 @@ class _LoginViewState extends State<LoginView> {
                               SizedBox(height: MySize.size8),
                               CustomTextField(
                                 controller: _emailController,
-                                hint: "Enter your Email Address",
+                                hint: "Enter your User Name",
                                 backgroundColor: Colors.grey[200],
                                 borderRadius: 12.0,
                                 borderColor: Colors.blue,
                                 borderWidth: 1,
                                 validator: (value) {
                                   if (value == null || value.isEmpty) {
-                                    return "Please enter your email";
+                                    return "Please enter your username";
                                   }
                                   return null;
                                 },

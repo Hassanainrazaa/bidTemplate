@@ -5,6 +5,7 @@ class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _HomePageState createState() => _HomePageState();
 }
 
@@ -97,9 +98,9 @@ class _HomePageState extends State<HomePage> {
               child: Column(
                 children: [
                   TabBar(
-                    indicator: BoxDecoration(
+                    indicator: const BoxDecoration(
                       //color: Colors.blue.shade100,
-                      border: const Border(
+                      border: Border(
                         bottom: BorderSide(
                           color: Colors.blue,
                           width: 2,
@@ -167,18 +168,18 @@ class _HomePageState extends State<HomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 // RFx Information Section
-                Text(
+                const Text(
                   "RFx Information",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
-                SizedBox(height: 30),
+                const SizedBox(height: 30),
                 _buildInfoRow("RFx ID", "RFX-000008"),
                 _buildInfoRow("RFx Record Type", "New"),
                 _buildInfoRow("RFx #", "EW-RFQ-2024--0132"),
                 _buildInfoRow("RFx Type", "RFQ (Request For Quote)"),
                 _buildInfoRow("Bid Type", "Firm"),
 
-                SizedBox(height: 30),
+                const SizedBox(height: 30),
               ],
             ),
             Padding(
@@ -192,7 +193,7 @@ class _HomePageState extends State<HomePage> {
                   //   "Bid Information",
                   //   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                   // ),
-                  SizedBox(height: 30),
+                  const SizedBox(height: 30),
                   _buildInfoRow("BID ID", "BID 000010"),
                   _buildInfoRow("Previous Record Type", ""),
                   _buildInfoRow("Bid Validity Period", "60 Days"),
@@ -221,13 +222,13 @@ class _HomePageState extends State<HomePage> {
       children: [
         Text(
           label,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 15,
             color: Color.fromARGB(255, 136, 134, 134),
             fontWeight: FontWeight.bold,
           ),
         ),
-        SizedBox(height: 5),
+        const SizedBox(height: 5),
         Text(
           value,
           style: TextStyle(
@@ -238,7 +239,7 @@ class _HomePageState extends State<HomePage> {
             fontWeight: FontWeight.bold,
           ),
         ),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
       ],
     );
   }
